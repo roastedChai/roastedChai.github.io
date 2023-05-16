@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoastedChai :: Contact</title>
+  <link rel="icon" type="image/x-icon" href="Assets/Logo/favicon_bla.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="Templates/header.js" type="text/javascript" defer></script>
+</head>
+<body>
+  <header-component></header-component>
+  <main>
+    <div class="complaint-form">
+      <form action = "thankyou.html" method= "POST">
+
+        <label for="complaint-title">Contact Title:</label>
+        <input type ="text" id = "complaint-title" name = "title" placeholder = "Title" required>
+
+        <label for="complaint-deets">Details</label>
+        <textarea id="complaint-deets" name="deets" rows="3" required></textarea>
+
+        <label for="myEmail">Email</label>
+        <input type = "email" id = "myEmail" name="email">
+
+        <label for="complaint-phone">Phone Number</label>
+        <input type="tel" id="complaint-phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder = "xxx-xxx-xxxx" required>
+
+        <label for="complaint-date">Date</label>
+        <input type="date" id ="complaint-date" value="2022-14-03" />
+
+        <input type="submit" value="Submit Complaint">
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
